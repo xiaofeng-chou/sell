@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.0.151:4000/product_db?characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      test-on-borrow: true
+      test-while-idle: true
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    database: mysql
+  thymeleaf:
+    cache: false
+#
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+# # path: /var/log/tomcate/
+#  file: /var/log/tomcate/sell/
+#  level:
+#    com.imooc.LoggerTest:debug
+#
